@@ -18,11 +18,10 @@
         app:srcCompat="@drawable/logodron" />
 
     <TextView
-        android:background="@drawable/redondeado"
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="124dp"
         android:text="Login/Registro"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="30dp"
@@ -30,4 +29,28 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="183dp"
+        android:layout_height="42dp"
+        android:background="@drawable/redondeado"
+        android:hint="Usuario"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="183dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/redondeado"
+        android:hint="Contraseña"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
