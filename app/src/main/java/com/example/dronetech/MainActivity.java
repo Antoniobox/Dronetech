@@ -26,8 +26,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String user = usuario.getText().toString();
                 String pass = password.getText().toString();
-                if(user.equals("hola") && pass.equals("adios")){
-                    Toast.makeText(getApplicationContext(), user, Toast.LENGTH_SHORT).show();
+                if(!user.equals("admin") || !pass.equals("12345")){
+                    Toast.makeText(getApplicationContext(), "Usuario o contraseña incorrecta", Toast.LENGTH_SHORT).show();
+                }else{
+                    //TODO: redireccionar a otra pagina
                 }
             }
         });
