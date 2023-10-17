@@ -3,10 +3,12 @@ package com.example.dronetech;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.BaseTransientBottomBar;
@@ -19,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        usuario = (EditText) findViewById(R.id.usuario);
-        password = (EditText) findViewById(R.id.password);
-        button = (Button) findViewById(R.id.button2);
+        usuario =  findViewById(R.id.usuario);
+        password = findViewById(R.id.password);
+        button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
