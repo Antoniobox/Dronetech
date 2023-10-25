@@ -27,7 +27,7 @@
         android:id="@+id/textView4"
         android:layout_width="274dp"
         android:layout_height="64dp"
-        android:text="DRONETECH"
+        android:text="@string/app_name"
         android:textColor="#1485A1"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
