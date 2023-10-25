@@ -9,10 +9,12 @@
         android:id="@+id/imageView2"
         android:layout_width="114dp"
         android:layout_height="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logodron" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgTricoptero"
         android:layout_width="132dp"
         android:layout_height="89dp"
         android:layout_marginStart="32dp"
@@ -39,7 +41,7 @@
         android:text="TRICÓPTERO"
         android:textColor="#1485A1"
         app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintTop_toTopOf="@+id/imgTricoptero" />
 
     <TextView
         android:id="@+id/textView3"
@@ -48,17 +50,17 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:text="Más rápido que Rayo MCQueen Cuchau!"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imgTricoptero"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgCuadricoptero"
         android:layout_width="132dp"
         android:layout_height="92dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imgTricoptero"
         app:srcCompat="@drawable/dron1" />
 
     <TextView
@@ -71,8 +73,8 @@
         android:textColor="#1485A1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+        app:layout_constraintStart_toEndOf="@+id/imgCuadricoptero"
+        app:layout_constraintTop_toTopOf="@+id/imgCuadricoptero" />
 
     <TextView
         android:id="@+id/textView6"
@@ -82,17 +84,17 @@
         android:text="Joder, que putas fotos hecha esta mierda"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imgCuadricoptero"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgHexacoptero"
         android:layout_width="132dp"
         android:layout_height="98dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imgCuadricoptero"
         app:srcCompat="@drawable/dron2" />
 
     <TextView
@@ -103,8 +105,8 @@
         android:layout_marginTop="4dp"
         android:text="HEXACÓPTERO"
         android:textColor="#1485A1"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+        app:layout_constraintStart_toEndOf="@+id/imgHexacoptero"
+        app:layout_constraintTop_toTopOf="@+id/imgHexacoptero" />
 
     <TextView
         android:id="@+id/textView8"
@@ -113,17 +115,17 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Usa Linux"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imgHexacoptero"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imgOctocoptero"
         android:layout_width="132dp"
         android:layout_height="88dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imgHexacoptero"
         app:srcCompat="@drawable/dron3" />
 
     <TextView
@@ -133,8 +135,8 @@
         android:layout_marginStart="16dp"
         android:text="OCTOCÓPTERO"
         android:textColor="#1485A1"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+        app:layout_constraintStart_toEndOf="@+id/imgOctocoptero"
+        app:layout_constraintTop_toTopOf="@+id/imgOctocoptero" />
 
     <TextView
         android:id="@+id/textView10"
@@ -143,7 +145,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="Viva la EFA El Campico"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imgOctocoptero"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <!--TODO: usar inflador para hacerlo dinamico-->
