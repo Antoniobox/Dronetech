@@ -21,34 +21,16 @@ public class ListadoDrones extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listado_drones);
+
         octocoptero = findViewById(R.id.imgOctocoptero);
         tricoptero = findViewById(R.id.imgTricoptero);
         cuadricoptero = findViewById(R.id.imgCuadricoptero);
         hexacoptero = findViewById(R.id.imgHexacoptero);
+
         //TODO: cambiar las vistas cuando las tenga personalizadas
-        octocoptero.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                changeView(MainActivity.class);
-            }
-        });
-        tricoptero.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                changeView(MainActivity.class);
-            }
-        });
-        cuadricoptero.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                changeView(MainActivity.class);
-            }
-        });
-        hexacoptero.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                changeView(MainActivity.class);
-            }
-        });
+        octocoptero.setOnClickListener(view -> changeView(MainActivity.class));
+        tricoptero.setOnClickListener(view -> changeView(MainActivity.class));
+        cuadricoptero.setOnClickListener(view -> changeView(MainActivity.class));
+        hexacoptero.setOnClickListener(view -> changeView(MainActivity.class));
     }
 }
