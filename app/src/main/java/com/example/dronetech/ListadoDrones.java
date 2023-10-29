@@ -17,10 +17,10 @@ public class ListadoDrones extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listado_drones);
         drones = new ArrayList<>();
-        drones.add(new Dron(1, R.drawable.dron1, "CUADRICOPTERO", "Yo quiero bailar, toda la noche"));
-        drones.add(new Dron(2, R.drawable.dron2, "TRICÓPTERO", "Life's like a road that you travel on"));
-        drones.add(new Dron(3, R.drawable.dron3, "HEXACÓPTERO", "Desarrollado por las mejores gallinas de mi corral"));
-        drones.add(new Dron(4, R.drawable.dron4, "OCTOCÓPTERO", "Loreall Paris, por que tu lo vales"));
+        drones.add(new Dron(0, R.drawable.dron1, "CUADRICOPTERO", "Yo quiero bailar, toda la noche"));
+        drones.add(new Dron(1, R.drawable.dron2, "TRICÓPTERO", "Life's like a road that you travel on"));
+        drones.add(new Dron(2, R.drawable.dron3, "HEXACÓPTERO", "Desarrollado por las mejores gallinas de mi corral"));
+        drones.add(new Dron(3, R.drawable.dron4, "OCTOCÓPTERO", "Loreall Paris, por que tu lo vales"));
         IODrones.guardarDrones(this.getApplicationContext(), drones, "drones");
         //FIXME: no almacena el fichero :(
         ListView listView = findViewById(R.id.listView);

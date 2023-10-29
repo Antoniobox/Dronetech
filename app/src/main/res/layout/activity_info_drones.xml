@@ -33,28 +33,26 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/dron1" />
+         />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/nombreDron"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
-        android:text="CUADRICÓPTERO"
         android:textColor="#1485A1"
         android:textSize="22dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgInfoDron" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/descripcionDron"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="36dp"
-        android:text="Descripción del dron"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/nombreDron" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
